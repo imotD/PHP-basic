@@ -40,7 +40,13 @@ var_dump($car["id"]);
 $mahasiswa = [
     "nim" => 12333,
      "name" => "Tommy",
-     "address" => "Banten"
+     "address" => [
+        "city" => "Pandeglang",
+        "zip" => 42211
+     ]
 ];
 
+var_dump($mahasiswa["address"]["city"]);
+
 var_dump($mahasiswa);
+
